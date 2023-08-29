@@ -1,0 +1,285 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+
+}
+.App h1 {
+  font-size: 50px;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 20px;
+}
+
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+ul {
+  padding: 0;
+  width: 100%;
+}
+
+.results li {
+padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+li {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.search-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust as needed */
+  gap: 20px;
+}
+/* Style for each search result item */
+.result-item {
+  border: 1px solid #ccc;
+width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 4px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.remove-container {
+  width: 50%;
+
+}
+.removebtn {
+  width: 50%;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  outline: none;
+  border: 1px transparent;
+  border-radius: 20px;
+  color: white;
+}
+.track-name {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 50%;
+}
+.result-container {
+  width: 50%;
+  z-index: 0;
+}
+label {
+  font-size: 30px;
+}
+.select-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  height: 50px;
+}
+.search-btn {
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  padding: 20px;
+}
+.search-btn input {
+  height: 30px;
+  width: 50%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
+  text-indent: 10px;
+}
+.search-btn button:hover {
+  color: white;
+  background-color: black;
+}
+.search-btn button {
+  width: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.589);
+background-color: white;;
+}
+select {
+  padding: 10px;
+  width: 100px;
+}
+.show-fav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+.result-search {
+  width: auto;
+  padding: 0;
+}
+.addbtn:hover {
+  color: white;
+  background-color: black;
+}
+.addbtn {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.199);
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
+}
+.addbtn-style {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+}
+button {
+  cursor: pointer;
+}
+.results-display {
+  width: 50%;
+}
+.show-fav button {
+  padding: 20px;
+  border-radius: 20px;
+  outline: none;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.473);
+}
+.show-fav button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+.next-btn {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.452);
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.next-btn:hover {
+  color: white;
+  background-color: black;
+}
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+  .App {
+    overflow: hidden;
+  }
+  .App h1 {
+    font-size: 24px;
+    padding: 10px;
+  }
+h2 {
+  width: 100%;
+  padding: 10px;
+}
+  .result-item {
+    font-size: 14px;
+  }
+
+  .artist-name {
+    font-size: 12px;
+  }
+.result-item {
+  width: auto;
+  padding: 10px;
+}
+.search-btn {
+  display: flex;
+  justify-content: center;
+}
+  .select-media,
+  .search-btn,
+  .results-display {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .search-results {
+    grid-template-columns: 1fr;
+  }
+
+  .addbtn {
+    padding: 5px;
+  }
+.result-container {
+  width: 90%;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+}
+  .show-fav button {
+    padding: 5px;
+  }
+}
