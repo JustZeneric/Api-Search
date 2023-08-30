@@ -1,6 +1,6 @@
 # Live View ( It is currently up for me )
 https://itunes-search.000webhostapp.com/
-
+Github would'nt accept my folders or files if node files where still there for some reason so i deleted them.
 
 # Getting Started with Create React App
 
